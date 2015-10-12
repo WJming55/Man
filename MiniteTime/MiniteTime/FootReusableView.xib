@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footer" id="U6b-Vx-4bR" customClass="FootReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="last.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="xHh-01-AsV">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="178"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24小时写作·Newwriting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfm-rc-PNn">
+                    <rect key="frame" x="189" y="0.0" width="206" height="21"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="206" id="Gcd-aL-EyW"/>
+                        <constraint firstAttribute="height" constant="21" id="ygI-vj-1U4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xHh-01-AsV" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="6eH-qc-344"/>
+                <constraint firstItem="Mfm-rc-PNn" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Ozx-oc-cIi"/>
+                <constraint firstAttribute="trailing" secondItem="xHh-01-AsV" secondAttribute="trailing" id="WoD-gQ-STO"/>
+                <constraint firstAttribute="bottom" secondItem="xHh-01-AsV" secondAttribute="bottom" id="lPr-tE-kpx"/>
+                <constraint firstItem="xHh-01-AsV" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="pEL-P7-cRT"/>
+                <constraint firstAttribute="trailing" secondItem="Mfm-rc-PNn" secondAttribute="trailing" id="zcF-85-r6J"/>
+            </constraints>
+            <connections>
+                <outlet property="lastImage" destination="xHh-01-AsV" id="J1q-X1-WN2"/>
+                <outlet property="nameLabel" destination="Mfm-rc-PNn" id="Mwa-fS-7aB"/>
+            </connections>
+            <point key="canvasLocation" x="379.5" y="442"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="last.jpeg" width="1021" height="648"/>
+    </resources>
+</document>
